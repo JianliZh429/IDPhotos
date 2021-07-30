@@ -50,7 +50,7 @@ def grab_cut(image_file, out_dir, tz, verbose=1):
 @click.option('--image_file', type=str, help='Image file of the photo you want to process')
 @click.option('--out_dir', default='./output', type=str, help='Output directory to save results')
 @click.option('--tz', default=1, type=int, help='Output image size: 1 is for 1 inch, 2 is for 2 inches')
-@click.option('--verbose', default=0, type=int, help='Whether to show processing images')
+@click.option('--verbose', default=0, type=int, help='Whether to show processing images, press ESC to close window')
 def change_color(image_file, out_dir, tz, verbose):
     if not os.path.exists(out_dir):
         os.mkdir(out_dir)
